@@ -1,0 +1,182 @@
+{
+	"info": {
+		"_postman_id": "f6ddd9ed-a702-475c-8afe-946167af6293",
+		"name": "SingpassV4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28124922",
+		"_collection_link": "https://restless-crescent-79550.postman.co/workspace/Home-Team-NS~1fa1ae5b-1fa3-4cbb-881c-da1bf69f3ec8/collection/28124922-f6ddd9ed-a702-475c-8afe-946167af6293?action=share&source=collection_link&creator=28124922"
+	},
+	"item": [
+		{
+			"name": "Singpass Copy",
+			"item": [
+				{
+					"name": "GET singpassv4/authorize",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Client-Key",
+								"value": "{{client_key}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Client-Secret",
+								"value": "{{client_secret}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Client-Version",
+								"value": "2",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:3001/singpass/v4/authorize",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"singpass",
+								"v4",
+								"authorize"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET singpass/v4/callback",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Client-Key",
+								"value": "{{client_key}}",
+								"type": "text"
+							},
+							{
+								"key": "Client-Secret",
+								"value": "{{client_secret}}",
+								"type": "text"
+							},
+							{
+								"key": "Client-Version",
+								"value": "2",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:3001/callback?code=myinfo-com-LdvOjkIl6SdG0stxTC9oe5v5UoGmwbiZDnEfimQV",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"callback"
+							],
+							"query": [
+								{
+									"key": "code",
+									"value": "myinfo-com-LdvOjkIl6SdG0stxTC9oe5v5UoGmwbiZDnEfimQV"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST singpass/v4/getperson",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Client-Key",
+								"value": "{{client_key}}",
+								"type": "text"
+							},
+							{
+								"key": "Client-Secret",
+								"value": "{{client_secret}}",
+								"type": "text"
+							},
+							{
+								"key": "Client-Version",
+								"value": "2",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "authcode",
+									"value": "myinfo-com-uWLPmrsaCEEBvhHIqhh5Vrk4pl9IOfmyaUhp9Uco",
+									"type": "text"
+								},
+								{
+									"key": "state",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://localhost:3001/singpass/v4/getperson",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"singpass",
+								"v4",
+								"getperson"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,8 @@
+D:\Skubbs\SingpassV4\MyInfoConnectorV4\bin\Debug\MyInfoConnectorV4.dll
+D:\Skubbs\SingpassV4\MyInfoConnectorV4\bin\Debug\MyInfoConnectorV4.pdb
+D:\Skubbs\SingpassV4\MyInfoConnectorV4\bin\Debug\jose-jwt.dll
+D:\Skubbs\SingpassV4\MyInfoConnectorV4\obj\Debug\MyInfoConnectorV4.csproj.AssemblyReference.cache
+D:\Skubbs\SingpassV4\MyInfoConnectorV4\obj\Debug\MyInfoConnectorV4.csproj.CoreCompileInputs.cache
+D:\Skubbs\SingpassV4\MyInfoConnectorV4\obj\Debug\MyInfoConnectorV4.csproj.CopyComplete
+D:\Skubbs\SingpassV4\MyInfoConnectorV4\obj\Debug\MyInfoConnectorV4.dll
+D:\Skubbs\SingpassV4\MyInfoConnectorV4\obj\Debug\MyInfoConnectorV4.pdb
